@@ -27,10 +27,6 @@ const db = new sqlite3.Database('./dentalhaven.db', sqlite3.OPEN_READWRITE, (err
 
 
 // Get data
-
-
-
-
 async function getData(url) {
   try {
     const { data } = await axios.get(url);
@@ -57,7 +53,7 @@ async function getData(url) {
     console.log(error);
   }
     }
-    getData("https://random-data-api.com/api/users/random_user?search=20"); 
+    getData("https://random-data-api.com/api/users/random_user?search=20");
 
 
     // if (Array.isArray(data)) {
